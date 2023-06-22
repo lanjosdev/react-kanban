@@ -5,9 +5,14 @@
 
     border-radius: 10px;
     box-shadow: 0 0 8px 0 #4b4a4ab9;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tasklist .title {
+    width: 100%;
     padding: 4px;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 7px;
@@ -19,14 +24,32 @@
 
     display: flex;
     flex-direction: column;
+
+    width: 100%;
+}
+.content > p {
+    text-align: center;
 }
 .tasklist button {
+    background-color: rgba(29,127,253,1);
+    color: white;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0.5rem;
     border-radius: 7px;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.253);
 
-    display: block;
-    margin: auto;
+    transition: background-color 0.3s
+}
+.tasklist button:hover {
+    background-color: #0091a8;
+}
+.tasklist button img {
+    width: 15px;
+    height: 15px;
+    margin-right: 4px;
 }

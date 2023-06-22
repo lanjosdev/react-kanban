@@ -56,7 +56,9 @@ export default function TaskItem({ id, title, taskState, onTaskUpdate, onDeleteT
                     />
                     <button onClick={onBtOkDown}><img src="icons8-selecionado.svg" alt="" /></button>
                 </div>
-                <select onChange={onTaskStateChange} value={taskState}>
+
+                <label htmlFor="status">Status:</label>
+                <select id="status" onChange={onTaskStateChange} value={taskState}>
                     <option value="a fazer">A fazer</option>
                     <option value="em andamento">Em andamento</option>
                     <option value="concluido">Concluído</option>

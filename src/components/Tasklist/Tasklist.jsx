@@ -14,7 +14,7 @@ import TaskItem from '../TaskItem/TaskItem';
 function Tasklist({ title, taskState, onAddTask, tasks, onTaskUpdate, onDeleteTask }) {
     function addTask() {
         // console.log("chamada dentro do TaskList");
-        onAddTask("Nova Tarefa", taskState);
+        onAddTask("Digite aqui", taskState);
     }
     
  
@@ -35,8 +35,13 @@ function Tasklist({ title, taskState, onAddTask, tasks, onTaskUpdate, onDeleteTa
                         />
                     );
                 })}
+                {tasks.length === 0 && <p>Lista Vazia</p>}
             </div>
-            <button onClick={addTask}>Adicionar Tarefa</button>
+            
+            <button onClick={addTask}>
+                <img src="plus-icon.svg" alt="" />
+                Adicionar Tarefa
+            </button>
         </div>
     );
 }

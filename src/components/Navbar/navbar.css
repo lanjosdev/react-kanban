@@ -1,4 +1,6 @@
 .navbar {
+    width: 100%;
+    min-width: 800px;
     display: flex;
 
     background-color: #0000004d;
