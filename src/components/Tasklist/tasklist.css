@@ -1,0 +1,32 @@
+.tasklist {
+    padding: 8px;
+    background-color: #5797b9;
+    border-radius: 5px;
+
+    border-radius: 10px;
+    box-shadow: 0 0 8px 0 #4b4a4ab9;
+}
+
+.tasklist .title {
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    text-align: center;
+}
+
+.tasklist .content {
+    padding: 16px 4px;
+
+    display: flex;
+    flex-direction: column;
+}
+.tasklist button {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.5rem;
+    border-radius: 7px;
+    border: 1px solid black;
+
+    display: block;
+    margin: auto;
+}
